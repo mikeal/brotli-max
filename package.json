@@ -1,0 +1,19 @@
+{
+  "name": "brotli-max",
+  "version": "0.0.0",
+  "description": "Compress file with max brotli settings",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "pretest": "standard"
+  },
+  "keywords": [],
+  "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (https://www.mikealrogers.com/)",
+  "license": "(Apache-2.0 AND MIT)",
+  "dependencies": {
+    "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "standard": "^14.1.0"
+  }
+}
