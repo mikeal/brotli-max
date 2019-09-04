@@ -1,11 +1,14 @@
 {
   "name": "brotli-max",
-  "version": "0.0.0",
+  "version": "0.0.0-dev",
   "description": "Compress file with max brotli settings",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
     "pretest": "standard"
+  },
+  "bin": {
+    "brotli-max": "./cli.js"
   },
   "keywords": [],
   "author": "Mikeal Rogers <mikeal.rogers@gmail.com> (https://www.mikealrogers.com/)",
@@ -15,5 +18,13 @@
   },
   "devDependencies": {
     "standard": "^14.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeal/brotli-max.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mikeal/brotli-max/issues"
+  },
+  "homepage": "https://github.com/mikeal/brotli-max#readme"
 }
