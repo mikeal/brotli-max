@@ -1,5 +1,8 @@
 const zlib = require('zlib')
 const fs = require('fs')
+const { promisify } = require('util')
+const compress = promisify(zlib.brotliCompress)
+
 const { stat, writeFile } = fs.promises
 
 const main = async (input, output) => {
@@ -23,7 +26,7 @@ const main = async (input, output) => {
     const o = fs.createReadStream(input).pipe(stream).pipe(fs.createWriteStream(output))
     return new Promise(resolve => o.on('close', resolve))
   }
-  return writeFile(output, input)
+  return writeFile(output, await compress(input))
 }
 
 module.exports = main
