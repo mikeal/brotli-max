@@ -4,7 +4,7 @@
   "description": "Compress file with max brotli settings",
   "main": "index.js",
   "scripts": {
-    "test": "node test.js",
+    "test": "hundreds node test.js",
     "pretest": "standard"
   },
   "bin": {
@@ -17,6 +17,7 @@
     "yargs": "^14.0.0"
   },
   "devDependencies": {
+    "hundreds": "0.0.2",
     "standard": "^14.1.0"
   },
   "repository": {
