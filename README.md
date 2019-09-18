@@ -22,6 +22,7 @@ In JS:
 const max = require('brotli-max')
 
 await max(inputFilename, outputFilename)
+await max(inputBuffer, outputFilename)
 ```
 
 Note that there is no streaming API because knowing the entire file size
